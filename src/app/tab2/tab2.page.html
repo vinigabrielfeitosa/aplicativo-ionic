@@ -1,17 +1,146 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title style="color: white; font-weight: 600;">
+      Lista de Jogos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-app>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-list>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2019/10/newcastle-united-logo-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Newcastle x Milan</h2>
+        <h3>13:45 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2016/09/milan-logo-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="data:image/png;base64,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"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Young Boys x Milan</h2>
+        <h3>13:45 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2019/11/rb-leipzig-logo-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2017/02/psg-logo-escudo-paris-saint-germain.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>PSG x Borussia</h2>
+        <h3>16:00 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2017/02/bvb-borussia-dortmund-logo-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2020/03/shakhtar-logo-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Shakhtar donetsk x Porto</h2>
+        <h3>16:00 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2017/03/fc-porto-logo-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2017/02/manchester-city-fc-logo-escudo-badge.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Manchester City x Estrela Vermelha</h2>
+        <h3>16:00 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2020/03/crvena-zvezda-logo-0-2048x2048.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2020/10/lazio-logo-1536x1032.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Lazio x Atletico de Madrid</h2>
+        <h3>16:00 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2017/02/atletico-madrid-logo-4-1.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2015/05/Barcelona-logo-escudo.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Barcelona x Antwerp</h2>
+        <h3>16:00 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2021/02/royal-antwerp-fc-1304x2048.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2022/03/feyenoord-logo-1536x1536.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2>Feyenoord x Celtic</h2>
+        <h3>16:00 - 19/09</h3>
+      </ion-label>
+      <ion-avatar slot="end">
+        <ion-img src="https://logodownload.org/wp-content/uploads/2022/09/celtic-fc-logo-4.png"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        <h2></h2>
+      </ion-label>
+    </ion-item>
+
+
+  </ion-list>
+
 </ion-content>
+</ion-app>

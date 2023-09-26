@@ -1,17 +1,84 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
+    <ion-title style="color: white; font-weight: 600;">
+      Configurações
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
+<ion-app>
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<div class="perfil" style="width: 100%;">
+<section>
+  <ion-avatar>
+    <img alt="Silhouette of a person's head" src="https://media.licdn.com/dms/image/D4D03AQGohNiV9nuAgA/profile-displayphoto-shrink_200_200/0/1672187427604?e=1700697600&v=beta&t=xjJWO9eWFuzXHXEuSsl1ZAdAeN5dJGoDFssiMWxRCt4" />
+  </ion-avatar>
+
+  <br>
+
+  <ion-title>
+    Vinícius Gabriel
+  </ion-title>
+</section>
+
+<ion-list>
+  <ion-label>Seguindo</ion-label>
+  <ion-item style="border-bottom: 0.5px solid rgb(61, 61, 61);">
+    <div style="display: flex; justify-content: space-between;">
+      <ion-item style="flex: 1;">
+        <ion-avatar style="align-self: flex-start;">
+          <ion-img src="https://logodownload.org/wp-content/uploads/2015/05/Barcelona-logo-escudo.png"></ion-img>
+        </ion-avatar>
+      </ion-item>
+      <ion-item style="flex: 1;">
+        <ion-avatar style="align-self: flex-end;">
+          <ion-img src="https://logodownload.org/wp-content/uploads/2017/02/bvb-borussia-dortmund-logo-1.png"></ion-img>
+        </ion-avatar>
+      </ion-item>
+      <ion-item style="flex: 1;">
+        <ion-avatar style="align-self: flex-start;">
+          <ion-img src="https://logodownload.org/wp-content/uploads/2016/09/milan-logo-1.png"></ion-img>
+        </ion-avatar>
+      </ion-item>
+      <ion-item style="flex: 1;">
+        <ion-avatar style="align-self: flex-end;">
+          <ion-img src="https://logodownload.org/wp-content/uploads/2017/02/Arsenal-logo-escudo-shield-1.png"></ion-img>
+        </ion-avatar>
+      </ion-item>
+    </div>
+  </ion-item>
+</ion-list>
+
+
+    <br>
+
+    <ion-list>
+
+      <ion-label>Sua Atividade</ion-label>
+      <ion-item style="border-bottom: 0.5px solid rgb(61, 61, 61);">
+        <a href="#">Favoritos</a>
+      </ion-item>
+    </ion-list>
+
+    <br>
+
+    <ion-list>
+
+      <ion-label>Suporte</ion-label>
+      <ion-item style="border-bottom: 0.5px solid rgb(61, 61, 61);">
+        <a href="#">Contato</a>
+      </ion-item>
+      <ion-item style="border-bottom: 0.5px solid rgb(61, 61, 61);">
+        <a href="#">Centro de Suporte</a>
+      </ion-item>
+    </ion-list>
+
+</div>
+
+<ion-list>
+
+</ion-list>
+
 </ion-content>
+</ion-app>

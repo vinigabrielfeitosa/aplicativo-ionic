@@ -1,0 +1,30 @@
+ion-card-title{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+ion-toolbar{
+  --ion-background-color: #1a0052;
+  border-bottom: 3px solid #0a0a0a;
+}
+
+ion-card-content{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+ion-app {
+  --ion-background-color: transparent;
+  margin-top: 55px;
+}
+
+ion-content {
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(62,5,185,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+ion-card{
+  background-color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}

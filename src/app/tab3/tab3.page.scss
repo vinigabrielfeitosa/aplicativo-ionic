@@ -1,0 +1,59 @@
+* {
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+ion-toolbar {
+  --ion-background-color: #1a0052;
+  border-bottom: 3px solid #0a0a0a;
+}
+
+ion-card-content {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+ion-app {
+  --ion-background-color: transparent;
+  margin-top: 55px;
+}
+
+ion-content {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(62, 5, 185, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.perfil {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-label{
+  margin-left: 2%;
+  font-weight: 500;
+}
+
+ion-list{
+  width: 100%;
+  background-color: #10032b9a;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+}

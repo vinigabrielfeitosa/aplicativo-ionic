@@ -7,6 +7,14 @@ import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
 
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-home-page',
+  templateUrl: './tabs.page.html',
+})
+export class HomePageComponent {}
+
 @NgModule({
   imports: [
     IonicModule,
@@ -14,6 +22,10 @@ import { TabsPage } from './tabs.page';
     FormsModule,
     TabsPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [
+    TabsPage,
+    HomePageComponent
+  ]
 })
+
 export class TabsPageModule {}
